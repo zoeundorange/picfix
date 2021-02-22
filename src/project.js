@@ -3531,7 +3531,7 @@ window.__require = function e(t, n, o) {
                 i.default.Instance.createFruitSui(o.fruitNumber, n.node.position),
                   i.default.Instance.createFruitL(o.fruitNumber, n.node.position, n.node.width),
                   // +1 变 -1
-                  i.default.Instance.createLevelUpFruit(o.fruitNumber + fruitVolume, n.node.position);
+                  i.default.Instance.createLevelUpFruit(o.fruitNumber -1, n.node.position);
                 var e = cc.find("Canvas/upEffectParent").getChildByName("daxigua");
                 e.active = !0, e.opacity = 0, cc.tween(e).to(.5, {
                   opacity: 150
